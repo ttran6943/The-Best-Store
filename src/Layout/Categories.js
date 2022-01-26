@@ -1,9 +1,11 @@
 import React from "react";
+import animationStyles from "../Components/animationStyles";
+import { StyleRoot } from "radium";
 
 function Categories() {
   return (
-    <>
-      <div class="container">
+    <StyleRoot>
+      <div class="container" style={animationStyles.fadeIn}>
         <div class="row">
           <div class="col-4">
             <h2>Men's Clothing</h2>
@@ -25,7 +27,7 @@ function Categories() {
           </div>
         </div>
       </div>
-    </>
+    </StyleRoot>
   );
 }
 

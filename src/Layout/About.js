@@ -1,11 +1,13 @@
 import React from "react";
 import aboutimg1 from "../Images/aboutimg1.jpeg";
 import aboutimg2 from "../Images/aboutimg2.jpeg";
+import animationStyles from "../Components/animationStyles";
+import { StyleRoot } from "radium";
 
 function About() {
   return (
-    <>
-      <div class="container my-5">
+    <StyleRoot>
+      <div class="container my-5" style={animationStyles.fadeIn}>
         <div class="row mb-5">
           <div class="col-6">
             <h2>Who Are We?</h2>
@@ -58,7 +60,7 @@ function About() {
           </div>
         </div>
       </div>
-    </>
+    </StyleRoot>
   );
 }
 export default About;
