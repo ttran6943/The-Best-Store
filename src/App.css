@@ -1,10 +1,41 @@
 .App {
-  text-align: center;
+  text-align: left;
+}
+.dnow-regionsContent {
+  background-color: SlateGray;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.dnow-regionsContent .card-img-overlay,
+img {
+  max-height: 40rem;
+}
+
+.overlay-div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.3;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.navbar {
+  max-height: 5rem;
+}
+
+.navbar-brand {
+  font-size: 14px !important;
+}
+
+.topnav .navbar {
+  max-height: 3rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +57,15 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.header-title {
+  font-family: monospace;
+  margin-right: 10px;
+}
+
+.header-icon {
+  max-height: 50px;
 }
 
 @keyframes App-logo-spin {
