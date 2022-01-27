@@ -5,6 +5,8 @@ import Header from "../Components/Header";
 import Home from "./Home";
 import Categories from "./Categories";
 import About from "./About";
+import SignIn from "./SignIn";
+import ForgotPassword from "./ForgotPassword";
 
 function Layout() {
   return (
@@ -15,6 +17,8 @@ function Layout() {
         <Route exact path="/" element={<Home />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/about" element={<About />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/forgottenpassword" element={<ForgotPassword />} />
       </Switch>
     </>
   );

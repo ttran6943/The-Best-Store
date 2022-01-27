@@ -13,6 +13,10 @@ img {
   max-height: 40rem;
 }
 
+.sign-in-page {
+  text-align: center;
+}
+
 .overlay-div {
   height: 100%;
   width: 100%;

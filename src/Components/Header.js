@@ -1,7 +1,9 @@
 import React from "react";
 import icon from "../Images/icon.svg";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
   return (
     <>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -53,7 +55,12 @@ function Header() {
                 Search
               </button>
             </form>
-            <button class="m-2 btn btn-secondary">Sign in</button>
+            <button
+              class="m-2 btn btn-secondary"
+              onClick={() => navigate("/signin")}
+            >
+              Sign in
+            </button>
           </div>
         </div>
       </nav>
